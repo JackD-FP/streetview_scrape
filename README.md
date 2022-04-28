@@ -62,7 +62,7 @@ This script is pretty versitile, although the python script above produces `jpg`
 ```
 var fList = folders[i].getFiles('*.jpg');
 ```
-just change '*.jpg' to '*.png' if the tiled images are different file format.
+just change `'*.jpg'` to `'*.png'` if the tiled images are different file format.
 
 Another Set of setting you can play around with are from lines 28 to 39.
 ```
