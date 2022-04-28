@@ -15,6 +15,7 @@ import os
 from shutil import copyfileobj
 from shutil import move
 from urllib.request import urlopen
+import key
 
 # Store all the CSV rows in the "locations" array.
 # locations = []
@@ -35,7 +36,7 @@ from urllib.request import urlopen
 locations = location.coor
 
 # Put your Google Street View API key here.
-api_key = "AIzaSyCLx1cVxGxez6FsHD0uE671_B2W7q7q8XE"
+api_key = key.api_key
 
 # headings changed
 api_url = "https://maps.googleapis.com/maps/api/streetview?size=512x512&location={0},{1}&fov={2}&heading={3}&pitch={4}&source=outdoor&key={5}"

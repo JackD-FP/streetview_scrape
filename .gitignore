@@ -1,3 +1,4 @@
 .env
 *.jpg
 *.psd
+key.py
