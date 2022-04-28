@@ -79,8 +79,19 @@ photomerge.advancedBlending = false; // 'Blend Images Together' checkbox in dial
 photomerge.lensCorrection = false; // Geometric Distortion Correction'checkbox in dialog
 photomerge.removeVignette = false; // 'Vignette Removal' checkbox in dialog
 ```
-These all correspondes to the Automate Photo Merge Window that pops out when you select it. lines 28 - 34 are about the layout whilst 36 to 39 are additional setting. There's is no content aware fill though... not sure what the object name is for that.
+These all correspondes to the Automate Photo Merge Window that pops out when you select it. lines 28 to 34 are about the layout whilst 36 to 39 are additional setting. There's is no content aware fill though... not sure what the object name is for that.
 
+![Photoshop Photo Merge](https://github.com/JackD-FP/streetview_scrape/blob/main/Screenshot%202022-04-29%20091709.png)
 
+Finally for lines 58 to 63, these lines corresponds to what kind of files are outputed by the script. at the moment it Saves a jpg and psd in the child folder and another jpg in the parent folder. You can comment out or in lines corresponding to the files types you want to get.
+
+```
+//savePSB(saveFile)
+//saveTIF(saveFile)
+//saveJPG(saveFile)
+saveJPG({name: folders[i].name, path: fList[0].parent, quality: 90})
+savePSD(saveFile)
+saveJPG({name: folders[i].name, path: activeDocument.path.parent, quality: 90})
+```
 
 
