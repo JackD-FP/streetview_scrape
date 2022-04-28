@@ -94,4 +94,5 @@ savePSD(saveFile)
 saveJPG({name: folders[i].name, path: activeDocument.path.parent, quality: 90})
 ```
 
+Just be aware Photoshop's Photomerge is not fool proof. It does conk out time to time and doesn't solves things correctly. I find that doing those ones manually by using photo merge again but with missing tiles and manually photoshopping those missing tiles back in is the best way around it. 
 
