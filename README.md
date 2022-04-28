@@ -55,7 +55,7 @@ There are a few things you need to know with this JS Script. First you need to c
 ```
 //@includepath "/C/Program Files/Adobe/Adobe Photoshop 2022/Presets/Scripts/"
 ```
-Assuming your Photoshop did not have a custom install, just make use `Adobe Photoshop 2022` bit of the script is correct to your version of PS.
+Assuming your Photoshop did not have a custom install, just make sure `Adobe Photoshop 2022` bit of the script is correct to your version of PS.
 
 This script is pretty versitile, although the python script above produces `jpg` images, you can use this JS script for other projects too. Incase those projects uses images like `png`, you can change that settings in line 26.
 
