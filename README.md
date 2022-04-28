@@ -50,21 +50,21 @@ dist = [
 
 # Editing JS for Photoshop
 
-There are a few things you need to know with this JS Script. First you need to change line 2 for your corresponding photoshop version. 
+There are a few things you need to know with this JS Script. First you need to change **line 2** for your corresponding photoshop version. 
 
 ```
 //@includepath "/C/Program Files/Adobe/Adobe Photoshop 2022/Presets/Scripts/"
 ```
 Assuming your Photoshop did not have a custom install, just make sure `Adobe Photoshop 2022` bit of the script is correct to your version of PS.
 
-This script is pretty versitile, although the python script above produces `jpg` images, you can use this JS script for other projects too. Incase those projects uses images like `png`, you can change that settings in line 26.
+This script is pretty versitile, although the python script above produces `jpg` images, you can use this JS script for other projects too. Incase those projects uses images like `png`, you can change that settings in **line 26**.
 
 ```
 var fList = folders[i].getFiles('*.jpg');
 ```
 just change `'*.jpg'` to `'*.png'` if the tiled images are different file format.
 
-Another Set of setting you can play around with are from lines 28 to 39.
+Another Set of setting you can play around with are from **lines 28 to 39**.
 ```
 // override Photomerge.jsx settings. Default is "Auto". Uncomment to override the default.
 photomerge.alignmentKey = "Auto";
@@ -79,11 +79,11 @@ photomerge.advancedBlending = false; // 'Blend Images Together' checkbox in dial
 photomerge.lensCorrection = false; // Geometric Distortion Correction'checkbox in dialog
 photomerge.removeVignette = false; // 'Vignette Removal' checkbox in dialog
 ```
-These all correspondes to the Automate Photo Merge Window that pops out when you select it. lines 28 to 34 are about the layout whilst 36 to 39 are additional setting. There's is no content aware fill though... not sure what the object name is for that.
+These all correspondes to the Automate Photo Merge Window that pops out when you select it. **lines 28 to 34** are about the layout whilst 36 to 39 are additional setting. There's is no content aware fill though... not sure what the object name is for that.
 
 ![Photoshop Photo Merge](https://github.com/JackD-FP/streetview_scrape/blob/main/Screenshot%202022-04-29%20091709.png)
 
-Finally for lines 58 to 63, these lines corresponds to what kind of files are outputed by the script. at the moment it Saves a jpg and psd in the child folder and another jpg in the parent folder. You can comment out or in lines corresponding to the files types you want to get.
+Finally for **lines 58 to 63**, these lines corresponds to what kind of files are outputed by the script. at the moment it Saves a jpg and psd in the child folder and another jpg in the parent folder. You can comment out or in lines corresponding to the files types you want to get.
 
 ```
 //savePSB(saveFile)
